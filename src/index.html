@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A space for stories and action to help animals."
+    />
+    <title>Vedant Foundation</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Isometra&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="#page-one" aria-label="Advait Foundation home">
+          <img class="brand__logo" src="./assets/profile-logo.png" alt="Advait Foundation logo" />
+          <span class="brand__name">VEDANT FOUNDATION</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+          <a href="#page-one">Home</a>
+          <a href="#page-two">Daily data</a>
+          <a href="#page-three">Species</a>
+          <a href="#page-four">Faith</a>
+          <a href="#page-five">Protein</a>
+          <a class="navigation__action" href="#site-footer">Contact</a>
+        </nav>
+        <span class="scroll-progress" aria-hidden="true"><span></span></span>
+      </header>
+      <section class="hero" id="page-one" aria-label="Animal Kind home">
+        <div class="hero__collage" aria-hidden="true">
+          <div class="collage-column collage-column--one">
+            <img src="../Public/sheep-ballarat-Australia_jo-anne-mcarthur-900x450.jpg" alt="" />
+            <img src="../Public/gettyimages-804742632-612x612.jpg" alt="" />
+            <img src="../Public/PigFarm_Italy_Jo-Anne-McArthur_Essere-Animali-900x450.jpg" alt="" />
+            <img src="../Public/cow-kiss-edgars-mission-sanctuary_jo-anne-mcarthur-900x450.jpg" alt="" />
+          </div>
+          <div class="collage-column collage-column--two">
+            <img src="../Public/layer-hens-spain_jo-anne-mcarthur_animal-equality-900x450.jpg" alt="" />
+            <img src="../Public/gettyimages-640613728-612x612.jpg" alt="" />
+            <img src="../Public/PigFarm_Finland_Jo-Anne-McArthur_Oikeutta-Elaimille-900x450.jpg" alt="" />
+            <img src="../Public/gettyimages-116492786-612x612.jpg" alt="" />
+          </div>
+          <div class="collage-column collage-column--three">
+            <img src="../Public/gettyimages-2254595959-612x612.jpg" alt="" />
+            <img src="../Public/Pig-Farm-Italy_Jo-Anne-McArthur_Essere-Animali-900x450.jpg" alt="" />
+            <img src="../Public/gettyimages-1640326511-612x612.jpg" alt="" />
+            <img src="../Public/Sandlyckan-Mink-Fur_Sweden_Jo-Anne-McArthur_Djurattsalliansen-900x450.jpg" alt="" />
+          </div>
+          <div class="collage-column collage-column--four">
+            <img src="../Public/gettyimages-1553905584-612x612.jpg" alt="" />
+            <img src="../Public/sheep-ballarat-Australia_jo-anne-mcarthur-900x450.jpg" alt="" />
+            <img src="../Public/gettyimages-116455224-612x612.jpg" alt="" />
+            <img src="../Public/cow-kiss-edgars-mission-sanctuary_jo-anne-mcarthur-900x450.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="vertical-line">
+          <p>WHY WE ALL ARE SO GREEDY</p>
+        </div>
+        <div class="hero__copy">
+          <div class="small-heading">
+            <div class="square"></div>
+            <p>DHARMA IS NOT ONLY PUJA</p>
+          </div>
+          <h1 class="hero-heading1"><span class="span-hero1">ALL.</span> Animals are <span class="word-rotator" aria-live="polite" aria-label="Animated word"></span></h1>
+        </div>
+      </section>
+      <section class="blank-page" id="page-two" aria-labelledby="daily-estimate-title">
+        <div class="page-two__image" aria-hidden="true">
+          <img src="../Public/cow-kiss-edgars-mission-sanctuary_jo-anne-mcarthur-900x450.jpg" alt="" />
+        </div>
+        <div class="page-two__content">
+          <p class="page-two__eyebrow">A life is not a statistic</p>
+          <h2 id="daily-estimate-title">
+            <span>ESTIMATES OF ANIMALS</span>
+            <span>KILLED EVERY DAY</span>
+          </h2>
+          <p class="page-two__description">
+            The total number of animals killed per day is estimated to be
+            between <strong>3.44 billion</strong> and <strong>6.57 billion</strong>.
+          </p>
+        </div>
+      </section>
+      <section class="species-page" id="page-three" aria-labelledby="species-estimate-title">
+        <div class="species-page__image" aria-hidden="true">
+          <img src="../Public/sheep-ballarat-Australia_jo-anne-mcarthur-900x450.jpg" alt="" />
+        </div>
+        <div class="species-page__content">
+          <p class="page-two__eyebrow">A closer look at the numbers</p>
+          <h2 id="species-estimate-title" class="species-page__title">
+            <span>ESTIMATES OF ANIMALS</span>
+            <span>KILLED EVERY DAY</span>
+          </h2>
+          <ul class="species-estimate-list">
+            <li><span>Geese</span><strong>2 million</strong></li>
+            <li><span>Sheep</span><strong>1.7 million</strong></li>
+            <li><span>Rabbits</span><strong>1.5 million</strong></li>
+            <li><span>Turkeys</span><strong>1.4 million</strong></li>
+            <li><span>Goats</span><strong>1.4 million</strong></li>
+            <li><span>Cows</span><strong>846,000</strong></li>
+            <li><span>Pigeons &amp; other birds</span><strong>134,000</strong></li>
+            <li><span>Buffalo</span><strong>77,000</strong></li>
+          </ul>
+          <p class="species-page__source">Source: <strong>sentientmedia.org</strong></p>
+        </div>
+      </section>
+      <section class="reflection-page" id="page-four" aria-labelledby="reflection-title">
+        <div class="reflection-page__image" aria-hidden="true">
+          <img src="../Public/PigFarm_Finland_Jo-Anne-McArthur_Oikeutta-Elaimille-900x450.jpg" alt="" />
+        </div>
+        <div class="reflection-page__content">
+          <p class="page-two__eyebrow">Faith, conscience &amp; kindness</p>
+          <h2 id="reflection-title" class="reflection-page__title">
+            Can devotion ask us to cause harm?
+          </h2>
+          <p class="reflection-page__lead">
+            A compassionate question can be an act of reverence, not disrespect.
+          </p>
+          <p class="reflection-page__copy">
+            Some people are told an animal must be killed for a ritual, or that
+            doing so guarantees divine blessing. Beliefs and interpretations
+            differ; no single reading speaks for every believer.
+          </p>
+          <p class="reflection-page__copy">
+            Sacred writings—including the Bhagavad Gita, the Bible, the Guru
+            Granth Sahib, and many others—are understood in different ways and
+            within rich, diverse traditions. It is neither fair nor accurate to
+            dismiss whole traditions as “fake” or reduce them to one text.
+          </p>
+          <div class="reflection-page__callout">
+            Ask where a claim comes from. Read it in context. Listen to
+            thoughtful voices within the tradition—and consider the life
+            affected by the practice.
+          </div>
+        </div>
+      </section>
+      <section class="protein-page" id="page-five" aria-labelledby="protein-title">
+        <div class="protein-page__intro">
+          <p class="page-two__eyebrow">Nourishment without harm</p>
+          <h2 id="protein-title" class="protein-page__title">
+            Protein can come from plants.
+          </h2>
+          <p class="protein-page__copy">
+            Choosing meals with plant protein is one way to nourish yourself
+            while leaving animals off your plate. There are plenty of familiar,
+            satisfying options to explore.
+          </p>
+          <p class="protein-page__note">
+            Protein needs vary with age, health, and activity. A varied,
+            well-planned diet can help meet them; a registered dietitian or
+            healthcare professional can offer advice for your needs.
+          </p>
+        </div>
+        <div class="protein-page__sources" aria-label="Plant-based protein sources">
+          <article class="protein-card">
+            <span class="protein-card__number">01</span>
+            <h3>Lentils</h3>
+            <p>At home in dals, soups, salads, and curries.</p>
+          </article>
+          <article class="protein-card">
+            <span class="protein-card__number">02</span>
+            <h3>Beans &amp; chickpeas</h3>
+            <p>Versatile staples for meals across many cuisines.</p>
+          </article>
+          <article class="protein-card">
+            <span class="protein-card__number">03</span>
+            <h3>Soy foods</h3>
+            <p>Tofu, tempeh, and edamame bring variety to the plate.</p>
+          </article>
+          <article class="protein-card">
+            <span class="protein-card__number">04</span>
+            <h3>Peas</h3>
+            <p>An easy addition to everyday meals and snacks.</p>
+          </article>
+          <article class="protein-card">
+            <span class="protein-card__number">05</span>
+            <h3>Nuts &amp; seeds</h3>
+            <p>Enjoy them as snacks or add them for crunch.</p>
+          </article>
+          <article class="protein-card">
+            <span class="protein-card__number">06</span>
+            <h3>Whole grains</h3>
+            <p>Oats, quinoa, and other grains round out a varied diet.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer">
+      <div class="site-footer__main">
+        <div class="site-footer__message">
+          <p class="site-footer__eyebrow">Choose compassion</p>
+          <h2>Let kindness be the change<br />the world can feel.</h2>
+          <p class="site-footer__copy">
+            Every life matters. The way we see, speak for, and care for animals
+            can help make a more thoughtful world.
+          </p>
+          <a class="site-footer__action" href="mailto:akshpro01@gmail.com">
+            Reach out <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="site-footer__contact" aria-label="Contact information">
+          <p class="site-footer__eyebrow">Get in touch</p>
+          <a href="mailto:akshpro01@gmail.com">akshpro01@gmail.com</a>
+          <a href="tel:+917989773839">+91 79897 73839</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>VEDANT FOUNDATION</span>
+        <span>Lead with empathy. Leave a kinder world.</span>
+      </div>
+    </footer>
+  </body>
+</html>
